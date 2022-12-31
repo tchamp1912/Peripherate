@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "peripherate"
+version = "0.1.0"
+description = "Generate peripheral C/C++ wrapper from JSON file."
+authors = ["tchamp1912 <thomascampion@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
