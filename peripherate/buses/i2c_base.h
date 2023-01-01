@@ -3,6 +3,8 @@
 
 #include <stddef.h>
 
+#include "err_codes.h"
+
 class i2c_base {
 public:
     i2c_base() {}
@@ -59,15 +61,6 @@ public:
      * @return upon success 0 is returned, upon error -eErrCode is returned.
      */
     int write(unsigned int iic_address, unsigned int register_address, char* pdata, const size_t data_size, const unsigned int max_wait_millis = 0);
-
-    enum eErrCodes: int {
-        SUCCESS,
-        INIT_FAIL,
-        INTERRUPT_REGISTER_FAILED,
-        TRANS_TIMEOUT,
-        TRANS_LOCK_FAILED,
-        RESET_FAILED,
-    };
 
 private:
     // can be overloaded to protect 

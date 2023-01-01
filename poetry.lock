@@ -1,0 +1,37 @@
+[[package]]
+name = "code_generation"
+version = "2.1.1"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.4"
+develop = false
+
+[package.dependencies]
+pathlib = "*"
+
+[package.source]
+type = "git"
+url = "https://github.com/yuchdev/code_generator.git"
+reference = "HEAD"
+resolved_reference = "5216601e4b327d5f47101c65909a133fa68bca81"
+
+[[package]]
+name = "pathlib"
+version = "1.0.1"
+description = "Object-oriented filesystem paths"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "6a5a6e25739c1ab39f5fc820e6eb4728bce0147d983a1acb168abd7b58ce7f94"
+
+[metadata.files]
+code_generation = []
+pathlib = [
+    {file = "pathlib-1.0.1-py3-none-any.whl", hash = "sha256:f35f95ab8b0f59e6d354090350b44a80a80635d22efdedfa84c7ad1cf0a74147"},
+    {file = "pathlib-1.0.1.tar.gz", hash = "sha256:6940718dfc3eff4258203ad5021090933e5c04707d5ca8cc9e73c94a7894ea9f"},
+]

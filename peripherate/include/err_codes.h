@@ -1,3 +1,6 @@
+#ifndef ERROR_CODES_H
+#define ERROR_CODES_H
+
 enum eErrCodes: int {
     SUCCESS,
     INIT_FAIL,
@@ -5,4 +8,7 @@ enum eErrCodes: int {
     TRANS_TIMEOUT,
     TRANS_LOCK_FAILED,
     RESET_FAILED,
+    BOUNDS_ERR,
 };
+
+#endif
