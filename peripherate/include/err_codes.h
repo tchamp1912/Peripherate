@@ -1,0 +1,8 @@
+enum eErrCodes: int {
+    SUCCESS,
+    INIT_FAIL,
+    INTERRUPT_REGISTER_FAILED,
+    TRANS_TIMEOUT,
+    TRANS_LOCK_FAILED,
+    RESET_FAILED,
+};
